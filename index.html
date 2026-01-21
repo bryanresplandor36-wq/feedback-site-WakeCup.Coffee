@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <h1>We’d Love Your Feedback ⭐</h1>
+    <p>Your feedback helps us serve you better! 💛</p>
+
+    <!-- Feedback Form -->
+    <form id="feedbackForm">
+
+      <!-- Customer Name -->
+      <input
+        type="text"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+
+      <!-- Contact Info -->
+      <input
+        type="text"
+        name="contact"
+        placeholder="Email or Phone"
+        required
+      />
+
+      <!-- Star Rating -->
+      <label class="rating-label">How would you rate us?</label>
+      <div class="stars">
+        <label><input type="radio" name="rating" value="5" required> ⭐⭐⭐⭐⭐</label><br>
+        <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label><br>
+        <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label><br>
+        <label><input type="radio" name="rating" value="2"> ⭐⭐</label><br>
+        <label><input type="radio" name="rating" value="1"> ⭐</label>
+      </div>
+
+      <!-- Message Box -->
+      <textarea
+        name="message"
+        placeholder="Tell us about your experience"
+        rows="4"
+      ></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Feedback</button>
+
+    </form>
+
+    <!-- Success Message -->
+    <p id="successMsg"></p>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
